@@ -62,19 +62,22 @@ export default function Footer() {
               <a
                 className="facebook"
                 href="https://www.facebook.com/gaelnicolas.gila"
+                target="_blank" rel="noreferrer"
               >
                 <FontAwesomeIcon icon={faFacebookF} />
               </a>
-              <a className="twitter" href="https://twitter.com/kuroxqt">
+              <a className="twitter" href="https://twitter.com/kuroxqt" target="_blank" rel="noreferrer">
                 <FontAwesomeIcon icon={faTwitter} />
               </a>
               <a
                 className="instagram"
                 href="https://www.instagram.com/gaelgila/"
+                target="_blank" rel="noreferrer"
               >
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
-              <a className="twitch" href="https://www.twitch.tv/kuroxqt">
+              <a className="twitch" href="https://www.twitch.tv/kuroxqt"  target="_blank" rel="noreferrer">
+                
                 <FontAwesomeIcon icon={faTwitch} />
               </a>
             </div>
