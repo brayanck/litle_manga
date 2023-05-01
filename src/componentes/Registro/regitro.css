@@ -1,0 +1,34 @@
+.formulario__input-error{
+    font-size:9px;
+    margin-bottom:0;
+    color:rgb(207, 110, 110);
+    margin: 0 20%;
+    max-width: 250px;
+  }
+  .cambio {
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(29, 27, 26);
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .cambio a {
+    color: rgb(29, 27, 26);
+  }
+  .cambio a:hover {
+    color: rgb(226, 178, 196);
+  }
+  .formulario__mensaje{
+    display:none
+  }
+  .formulario__mensaje_activo{
+    display: flex;
+    line-height:45px;
+    background-color:rgb(243, 40, 40);
+    border-radius: 3px;
+    text-align: center;
+    max-width:400px;
+    margin: 0 10%;
+    
+  }
+ 

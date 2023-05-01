@@ -1,0 +1,247 @@
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    font-family: 'roboto',sans-serif;
+    margin-top: 150px;
+}
+.container_formulario_compra{
+    
+    max-width: 700px;
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 0px 1px #01332d,
+                0px 5px 12px -2px #01332d,
+                0px 18px 36px -6px #01332d;
+  
+    overflow: hidden;
+    margin: 10px;
+    background-color: #98ffe95b;
+    backdrop-filter: blur(5px);
+}
+.container_formulario_compra .title_formulario_compra{
+    padding: 25px;
+
+   
+}
+.container_formulario_compra .title_formulario_compra h1{
+    position: relative;
+    font-weight:800;
+   text-align: center;
+   font-size: 30px;
+   margin-bottom: 5px;
+   color: rgb(29, 27, 26);
+ 
+}
+.container_formulario_compra.title_formulario_compra h1::after{
+    position: relative;
+    content: "";
+    background: linear-gradient(45deg, rgba(80, 163, 211, 0.534), rgba(226, 178, 196, 0.616));
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 4px;
+ 
+}
+.container_formulario_compra .title_formulario_compra h4{
+    position: relative;
+    font-weight:400;
+   text-align: center;
+   font-size: 20px;
+   margin-top: 10px;
+   color:rgb(82, 77, 75)  ;
+}
+.container_formulario_compra .title3_formulario_compra h3{
+    position: relative;
+    font-weight:300;
+   font-size: 21px;
+   padding: 20px;
+   padding-left: 0;
+   padding-right: 300px;
+   color:  rgb(0, 0, 0);
+   margin: 0;
+   text-align: center;
+   font-weight: bold;
+
+}
+
+.container_formulario_compra .title3_formulario_compra h3::after{
+    position: relative;
+    content: "";
+    background: linear-gradient(45deg, rgba(80, 163, 211, 0.384), rgba(226, 178, 196,0.384));
+    position: absolute;
+    left: 0;
+    top: 75%;
+    width: 20%;
+    height: 4px;
+
+}
+.input_box_form input
+{
+    font-family: 'roboto',sans-serif;
+    padding-right:50px;
+    width: 250px;
+    font-size:15px;
+    outline: none;
+    margin: 10px 5%; 
+    background-color : #C3D4D4;
+    color:black;
+    height: 50px;
+    border: 1px solid #aaa;
+    border-radius: 15px;
+  
+   padding-left: 8px;
+}
+.seleccionar {
+    font-family: 'roboto',sans-serif;
+   transition: .3 ease all;
+    padding-right:50px;
+    width: 250px;
+    font-size:15px;
+    outline: none;
+    margin: 10px 5%; 
+    background-color : #C3D4D4;
+    height: 50px;
+    border: 1px solid #aaa;
+    border-radius: 15px;
+   padding-left: 8px;
+   color: #6a6b6b;
+   cursor: pointer;
+ }
+ .seleccionar option:hover{
+
+    background-color : #000;
+ 
+ }
+ .seleccionar :hover {
+    border-color: #afefe8; 
+ }
+ .disabled-option{
+    opacity: 20%;
+ }
+.input_box_form input:focus{
+    border-color: #afefe8; 
+}
+.input_box_obs textarea:focus{
+    border-color: #afefe8;  
+}
+
+.user_details{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+   
+}
+
+
+.user_details .input_box_form :placeholder-shown{
+   padding-left: 10px;
+   
+}
+
+
+
+
+/*.reg_btn
+{
+    width: 300px;
+    border:none;
+    font-size: 20px;
+    padding: 25px ;
+    border-radius: 20px;
+    border: 1px solid #afefe8;
+    margin: 15px 0;
+    font-family: cursive;
+    cursor: pointer;
+    background-color:  #D3F6DB;
+    font-weight:560;
+    color:#999;
+}
+
+.reg_btn:hover
+{
+    background-color:#afefe8;
+    transition: background-color 0.5s ease-out;
+}*/
+
+ 
+
+.reg_btn{
+    padding: 11px 20px;
+    margin: 15px 0;
+}
+
+.reg_btn input{
+    height: 40px;
+    width: 100%;
+    background: #01332d;
+    display: inline-block;
+    border: none;
+    color: #d7fff6;
+    text-align: center center;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    font-size: 25px;
+    font-weight: bold;   
+    border-radius: 20px;
+    /*letter-spacing: 1px;*/
+    
+}
+.input_box_obs textarea{
+    font-family: 'roboto',sans-serif;
+    display: flex;
+    width: 650px;
+    font-size:15px;
+    outline: none;
+   
+    background-color : #C3D4D4;
+    color:black;
+    border: 1px solid #aaa;
+    border-radius: 15px;
+    padding-right: 5px;
+   padding-top: 10px;
+   padding-bottom: 100px;
+   padding-left: 10px;
+   
+  
+}
+.input_box_obs :placeholder-shown{
+    text-align: initial;
+    text-overflow: unset;
+}
+.reg_btn input:hover{
+    background-color:#afefe8;
+    transition: background-color 0.5s ease-out;
+    color:black;
+    border: 1px solid #aaa;
+}
+
+@media screen and (max-width: 584px){
+
+    .user_details{
+        max-height: 340px;
+        overflow-y: scroll;
+    }
+
+    .user_details::-webkit-scrollbar{
+        width: 0;
+    }
+
+    .user_details .input_box{
+        width: 300px;
+    }
+
+    .input_box_obs textarea{
+        width: 300px;
+    }
+  
+
+    .container_formulario_compra .title3_formulario_compra h3{
+        padding-right: 100px;
+    }
+}
+

@@ -1,0 +1,246 @@
+
+.navegador
+{
+    background-color: #98ffe9;
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid;
+    box-shadow: 1px 0px 15px #01332d;
+    position: fixed;
+    margin: 0;
+    top: 0;
+    z-index: 30;
+}
+.navegador a{
+    padding-right: 5px;
+}
+.enlace
+{
+    
+    position: absolute;
+    padding: 10px 20px;
+}
+
+.logo{
+    height: 75px;
+    width: 90px;
+    transition:all 1s ;
+    
+}
+.logo:hover
+{
+    transition: all 1s ;
+    transform: scale(1.2);
+}
+.navegador ul{
+    float: right;
+    margin-right: 30px;
+}
+.navegador ul li{
+    display: inline-block;
+    line-height:100px;
+    margin: 0 15px;
+    
+}
+
+.navegador ul li a{
+    
+    color: rgb(36, 26, 21);
+    text-shadow: 1px 1px #558abb83;
+    font-size: 12px;
+    font-weight:600;
+    padding: 7px 13px;
+    border-bottom: 2px solid  rgb(226, 178, 196) ;
+    border-radius: 20%;
+    text-transform: uppercase;
+    transition:all 0.4s ;
+   
+}
+
+.hipervinculo
+{
+    padding: 10px;
+    margin-left:2px;
+    font-size: 15px;
+    height:30px;
+    background-color:#afefe8;
+}
+.navegador ul li a:hover
+{
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(226, 178, 196);
+    box-shadow: 0px 0px 1px rgb(226, 178, 196) , 0px 0px 3px  rgb(226, 178, 196) , 0px 0px 3px  rgb(226, 178, 196) ;
+    
+    transition: all 0.4s ;
+    transform: scale(2);
+    
+}
+.logout{
+    background-color:#afefe8;
+    color: rgb(36, 26, 21);
+    text-shadow: 1px 1px #558abb83;
+    font-size: 13px;
+    font-weight:600;
+    padding:8px 10px ;
+    border: none;
+    border-bottom: 2px solid  rgb(226, 178, 196) ;
+    border-radius: 20%;
+    text-transform: uppercase;
+    transition:all 0.4s ;
+
+}
+.logout:hover{
+    font-size: 15px;
+    background-color: #20e2d7;
+    box-shadow: 0px 0px 0px #20e2d7 , 0px 0px 3px  #20e2d7, 0px 0px 3px  #20e2d7 ;
+    transition: all 0.4s ;
+    color: white;
+    
+}
+
+.navegador li a.hipervinculo:hover
+{
+    font-size: 15px;
+    background-color: #20e2d7;
+    box-shadow: 0px 0px 0px #20e2d7 , 0px 0px 3px  #20e2d7, 0px 0px 3px  #20e2d7 ;
+    transition: all 0.4s ;
+}
+#btn-menu
+{
+    margin-top: 20px;
+    
+}
+
+.lbl-menu{
+    
+    float: right;
+    width: 40px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+	transform: scale(1.2);
+    margin-right: 20px;
+}
+.lbl-menu #spn1,#spn2,#spn3{
+    float: right;
+    margin-right: 40px;
+    margin-top: 30px;
+    position: absolute;
+    content: '';
+    background: #01332d;
+    width: 35px;
+    height: 7px;
+    border-radius: 5px;
+    transition: all 300ms ease;
+}
+
+#spn2{
+    top: 11px;
+}
+#spn3{
+    top: 22px;
+}
+
+
+#btn-menu
+{
+    display:none;
+}
+
+#btn-menu:checked ~ .lbl-menu #spn1{
+    transform: rotate(140deg);
+    top: 10px;
+}
+#btn-menu:checked ~ .lbl-menu #spn2{
+    opacity: 0;
+}
+#btn-menu:checked ~ .lbl-menu #spn3{
+    transform: rotate(-140deg);
+    top: 10px;
+}
+
+.lbl-menu{
+    display:none;
+}
+
+@media (max-width: 1250px){
+    .enlace{
+        padding-left: 15px;
+    }
+    nav ul li a{
+        font-size: 11px;
+    }
+    li a.hipervinculo
+    {
+        font-size: 12px;   
+    }
+}
+
+@media(max-width: 1250px)
+{
+    .lbl-menu {
+        display:flex;
+    }
+   
+    .navegador ul{
+        margin: 0;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: #01332d;
+        top: 100px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        
+    }
+    .navegador ul li{
+        cursor: pointer;
+        display: block;
+        margin: 45px 0;
+        line-height: 34px;
+        background: #01332d;
+        border: none;
+        box-shadow: none;
+    }
+    .navegador ul li a{
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        border:none;
+        box-shadow: none;
+        background: #01332d;
+        text-shadow: none;
+    }
+
+    .navegador ul li a:hover
+    {
+        font-size: 22px;
+        color:violet;
+        background: #01332d;
+        box-shadow: none;
+        border: none;
+        
+    }
+    
+    .navegador li a.hipervinculo
+    {
+        background: #01332d;
+       font-size: 22px;
+       text-shadow: none;
+       box-shadow: none;
+    }
+
+    .navegador li a.hipervinculo:hover{
+        color:#20e2d7;
+        background: #01332d;
+       font-size: 24px;
+       text-shadow: none;
+       box-shadow: none;
+    }
+
+    #btn-menu:checked ~ ul{
+        left:0;
+    }
+    
+}

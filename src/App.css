@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+body{
+  font-family:'roboto',sans-serif;
+  background-image: url("./assets/LOL.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+a{
+  text-decoration: none;
+}
+ul,
+li{
+  list-style: none;
+}
+.productos{
+  padding: 3rem 0;
+  margin:  50px 0 ;
+}
+.productos__center{
+  padding: 0 3rem;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 18rem));
+  gap: 2rem 2rem;
+}
+.titulo_index{
+  font-weight:800;
+   text-align: center;
+   font-size: 30px;
+   margin-bottom: 5px;
+   color: rgb(29, 27, 26);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container_404
+{
+  font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  margin: 0;
+  background-image: url("./assets/Mosaico.jpg");
+  background-repeat: repeat;
+  background-position: right top;
+  background-attachment: fixed;
 }
-
-.App-link {
-  color: #61dafb;
+.container_404 .titulo
+{
+  font-size: 4em;
+  font-weight: bold;
+  color: #21dfdf;
+  -webkit-text-stroke: 2px black;
+  text-align: center;
+  margin-top: 50px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container_404 .img
+{
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+.container_404 .text
+{
+  font-size: 1.5em;
+  color: #750505;
+  text-align: center;
+  margin-top: 30px;
 }

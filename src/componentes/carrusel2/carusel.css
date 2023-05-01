@@ -1,0 +1,14 @@
+.carrusel2 {
+	max-width: 1000px;
+	margin: 10px auto;
+	overflow: hidden;
+    margin-top: 100px;
+}
+.carrusel2 img {
+    height: 500px;
+}
+@media(max-width: 767px){
+    .carrusel2 img{
+        height: 400px;
+    }
+}
