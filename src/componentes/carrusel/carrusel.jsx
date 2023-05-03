@@ -34,7 +34,7 @@ const App = () => {
 				<Slide>
 						<img src={img4} alt="publicida"/>
 					<TextoSlide colorFondo="#98ffe9">
-						<p>Decuesntos</p>
+						<p>Decuentos</p>
 					</TextoSlide>
 				</Slide>
 			</Slideshow>

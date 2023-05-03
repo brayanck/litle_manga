@@ -126,13 +126,12 @@ const TextoSlide = styled.div`
 	background: ${props => props.colorFondo ? props.colorFondo : 'rgba(0,0,0,.3)'};
 	color: ${props => props.colorTexto ? props.colorTexto : '#01332d'};
 	width: 100%;
-	padding: 10px 60px;
+	padding: 10px 0px;
 	text-align: center;
 	position: absolute;
 	bottom: 0;
 	@media screen and (max-width: 700px) {
 		position: relative;
-		background: #000;
 	}
 `;
 
